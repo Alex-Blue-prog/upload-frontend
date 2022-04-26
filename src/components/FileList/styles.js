@@ -18,18 +18,29 @@ export const Container = styled.ul`
             align-items: center;
         }
     }
+
 `;
+
+
+
 
 export const FileInfo = styled.div`
     display: flex;
-    align-items: center;
+    margin-right: 10px;
 
     div {
         display: flex;
         flex-direction: column;
+     
+    }
+
+    strong {
+        width: 100%;
     }
 
     span {
+        display: inline-block;
+        width: 100%;
         font-size: 12px;
         color: #999;
         margin-top: 5px;

@@ -2,12 +2,10 @@ import styled, { css } from 'styled-components';
 
 const dragActive = css`
     border-color: #78e5d5;
-
 `;
 
 const dragReject = css`
     border-color: red;
-
 `;
 
 export const DropContainer = styled.div.attrs({
@@ -21,6 +19,7 @@ export const DropContainer = styled.div.attrs({
 
     ${props => props.isDragActive && dragActive};
     ${props => props.isDragReject && dragReject};
+    ${props => props.isDragActive && props.uploadLimit >= 5 && dragReject};
 `;
 
 const messageColors = {

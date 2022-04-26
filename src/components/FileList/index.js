@@ -5,7 +5,7 @@ import {MdCheckCircle, MdError, MdLink} from 'react-icons/md';
 const FileList = ({files, onDelete}) => {
   return (
     <Container>
-
+      
         {files.map(uploadedFile => (
             <li key={uploadedFile.id}>
             <FileInfo>
@@ -29,7 +29,7 @@ const FileList = ({files, onDelete}) => {
                 )}
                 
                 {uploadedFile.url && (
-                    <a href={uploadedFile.url} 
+                    <a style={{marginBottom: "-5px"}} href={uploadedFile.url} 
                     rel='noopener noreferrer'>
                         <MdLink style={{marginRight: 8}} size={24} color="#222" />
                     </a>
